@@ -48,6 +48,7 @@ const options = {
         } catch (error) {
             setError(error);
             alert("There is an error");
+            console.error("API fetch error:", error.response || error.message || error);
         }finally{
             setIsLoading(false);
 

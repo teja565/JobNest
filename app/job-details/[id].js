@@ -9,7 +9,7 @@ import useFetch from "../../hook/useFetch"
 const JobDetails = () => {
   const params = useSearchParams();
   const router = useRouter();
-  const job_id  = router.query?.id;
+//   const job_id  = router.query?.id;
   const {data,isLoading,error,refetch } = useFetch('job-details',{
     job_id:params,
 
